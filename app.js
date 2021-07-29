@@ -1,5 +1,4 @@
 // Rock, Paper, Scissor game
-
 function play() {
     
     let userChoice = prompt('Rock, paper or scissors?').toLowerCase();
@@ -58,24 +57,24 @@ function play() {
                     break;
             }
             break;
-        case 'paper':
-            switch(computerChoice) {
-                case 'rock':
-                    console.log(`${messageUser} ${userChoice}`); 
-                    console.log(`${messagePC} ${computerChoice}`);
-                    console.log(win);
-                    break;
-                case 'paper':
-                    console.log(`${messageUser} ${userChoice}`); 
-                    console.log(`${messagePC} ${computerChoice}`);
-                    console.log(draw);
-                    break;
-                case 'scissors':
-                    console.log(`${messageUser} ${userChoice}`); 
-                    console.log(`${messagePC} ${computerChoice}`);
-                    console.log(lose);
-                    break;
-            }
-            break;
+    case 'paper':
+        switch(computerChoice) {
+            case 'rock':
+                console.log(`${messageUser} ${userChoice}`); 
+                console.log(`${messagePC} ${computerChoice}`);
+                console.log(win);
+                break;
+            case 'paper':
+                console.log(`${messageUser} ${userChoice}`); 
+                console.log(`${messagePC} ${computerChoice}`);
+                console.log(draw);
+                break;
+            case 'scissors':
+                console.log(`${messageUser} ${userChoice}`); 
+                console.log(`${messagePC} ${computerChoice}`);
+                console.log(lose);
+                break;
+        }
+        break;
     }
 }
